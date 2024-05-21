@@ -1,0 +1,23 @@
+.tablistelement {
+  list-style: none;
+  margin-right: 10px;
+}
+.buttonTab {
+  width: 180px;
+  padding: 10px;
+  border: solid 1px #cc6ce7;
+  color: #cc6ce7;
+  border-radius: 20px;
+  overflow: unset;
+  background: none;
+}
+
+.activebuttontab {
+  width: 180px;
+  padding: 10px;
+  border: solid 1px #cc6ce7;
+  color: white;
+  border-radius: 20px;
+  overflow: unset;
+  background: #cc6ce7;
+}

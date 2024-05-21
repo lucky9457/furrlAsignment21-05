@@ -1,8 +1,9 @@
 import {BrowserRouter, Switch, Route} from 'react-router-dom'
-import Main from './components/Cart'
+import Cart from './components/Cart'
 import Navbar from './components/Navbar'
 import Homepage from './components/Homepage'
 import WishListPage from './components/WishListPage'
+
 import './App.css'
 
 const App = () => (
@@ -11,6 +12,7 @@ const App = () => (
     <Switch>
       <Route exact path="/" component={Homepage} />
       <Route exact path="/wishlist" component={WishListPage} />
+      <Route exact path="/cart" component={Cart} />
     </Switch>
   </BrowserRouter>
 )

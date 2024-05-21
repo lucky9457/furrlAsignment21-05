@@ -15,8 +15,9 @@ const Navbar = () => (
       <Link className="linkroute" to="/wishlist">
         <IoBookmarkOutline className="wishlisticon" />
       </Link>
-
-      <IoBagOutline className="carticon" />
+      <Link to="/cart" className="linkroute">
+        <IoBagOutline className="carticon" />
+      </Link>
     </div>
   </div>
 )
