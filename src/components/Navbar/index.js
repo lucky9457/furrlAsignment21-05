@@ -1,3 +1,4 @@
+import {Link} from 'react-router-dom'
 import {IoBookmarkOutline, IoBagOutline} from 'react-icons/io5'
 
 import '../../Styles/navbar.css'
@@ -11,8 +12,11 @@ const Navbar = () => (
     />
     <h1 className="navbarHeader">#Vibe Page</h1>
     <div className="wishlistAndCartIconContainer">
-      <IoBookmarkOutline className="wishlisticon" />
-      <IoBagOutline className="wishlisticon" />
+      <Link className="linkroute" to="/wishlist">
+        <IoBookmarkOutline className="wishlisticon" />
+      </Link>
+
+      <IoBagOutline className="carticon" />
     </div>
   </div>
 )

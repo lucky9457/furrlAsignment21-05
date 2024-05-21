@@ -24,6 +24,11 @@
   width: 20px;
   margin-right: 10px;
 }
+.carticon {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+}
 .navbarHeader {
   font-family: Roboto;
   font-size: 20px;
@@ -42,4 +47,12 @@
   .navbarContainer {
     width: 99vw;
   }
+}
+.linkroute {
+  text-decoration: none;
+  color: black;
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+  cursor: pointer;
 }

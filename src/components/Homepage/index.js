@@ -7,7 +7,6 @@ const Homepage = () => {
   const a = 'a'
   return (
     <div>
-      <Navbar />
       <Banner />
       <ProductList />
     </div>
