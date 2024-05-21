@@ -1,0 +1,83 @@
+li {
+  list-style: none;
+}
+.priceContainer {
+  display: flex;
+  align-items: center;
+}
+.itembanner {
+  background-size: cover;
+}
+.shareicon {
+  font-size: 30px;
+  margin: 5px;
+  background-color: #4c6578;
+  border: none;
+  border-radius: 50%;
+  padding: 5px;
+  color: white;
+}
+.itembanner {
+  width: 50%;
+  padding: 2px;
+  background-color: red;
+}
+.vendor {
+  font-family: Roboto;
+  font-size: 15px;
+  color: #716666;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+.title {
+  font-family: Roboto;
+  font-size: 15px;
+  color: #412f2f;
+  margin-top: 3px;
+  margin-left: 5px;
+  height: 20px;
+  overflow: hidden;
+}
+.priceContainer {
+  margin-left: 5px;
+  margin-top: 2px;
+  margin-bottom: 8px;
+  align-items: center;
+}
+.originalprice {
+  font-family: Roboto;
+  font-size: 15px;
+  color: ;
+  margin-right: 3px;
+}
+.mrpPrice {
+  font-family: Roboto;
+  font-size: 13px;
+  margin-top: 2px;
+  color: #716666;
+  text-decoration: line-through;
+  margin-right: 4px;
+}
+.discountpercentage {
+  font-family: Roboto;
+  font-size: 13px;
+  margin-top: 2px;
+  color: #716666;
+  text-decoration: line-through;
+  margin-right: 3px;
+}
+.sharebtn {
+  background: none;
+  border: none;
+}
+@media (min-width: 600px) {
+  .itembanner {
+    flex-grow: 1;
+    width: 30%;
+  }
+}
+@media (min-width: 996px) {
+  .itembanner {
+    width: 18%;
+  }
+}

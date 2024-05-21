@@ -1,0 +1,45 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.navbarContainer {
+  background-color: aquamarine;
+  height: 8vh;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+}
+
+.innernavContainer {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  width: 65%;
+}
+
+.wishlisticon {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+}
+.navbarHeader {
+  font-family: Roboto;
+  font-size: 20px;
+  color: black;
+}
+.wishlistAndCartIconContainer {
+  display: flex;
+  align-items: center;
+}
+.imagelogo {
+  height: 30px;
+  width: 50px;
+  margin-left: 10px;
+}
+@media (min-width: 996px) {
+  .navbarContainer {
+    width: 99vw;
+  }
+}
