@@ -20,7 +20,6 @@ li {
 .itembanner {
   width: 50%;
   padding: 2px;
-  background-color: red;
 }
 .vendor {
   font-family: Roboto;
@@ -47,7 +46,7 @@ li {
 .originalprice {
   font-family: Roboto;
   font-size: 15px;
-  color: ;
+  color: black;
   margin-right: 3px;
 }
 .mrpPrice {
@@ -69,6 +68,9 @@ li {
 .sharebtn {
   background: none;
   border: none;
+}
+.linkele {
+  text-decoration: none;
 }
 @media (min-width: 600px) {
   .itembanner {
