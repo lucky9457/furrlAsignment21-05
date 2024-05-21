@@ -12,7 +12,7 @@ const ProductList = () => {
   const [pageNumber, setPagenumber] = useState(1)
   const [resobj, setResobj] = useState({})
   const [tablist, setTablist] = useState([
-    {name: 'ALL', uniqueId: '0', type: 'CATEGORY'},
+    {name: 'ALL', uniqueId: '0', contentType: 'CATEGORY'},
   ])
   const [activetabid, setActivetabid] = useState(tablist[0].uniqueId)
   const [category, setcategory] = useState(tablist[0].type)
@@ -26,6 +26,7 @@ const ProductList = () => {
   const changeActiveTab = (id, contentType) => {
     setActivetabid(id)
     setcategory(contentType)
+    setProductdata([])
   }
 
   useEffect(() => {
@@ -49,7 +50,9 @@ const ProductList = () => {
       const {data} = tabdata
       const {getListingFilters} = data
       const {easyFilters} = getListingFilters
-      setTablist(prev => [...prev, ...easyFilters])
+      if (tablist.length <= 1) {
+        setTablist(prev => [...prev, ...easyFilters])
+      }
     }
     fetchTabdata()
   }, [activetabid])
@@ -61,15 +64,15 @@ const ProductList = () => {
     setIsloading(true)
     let filterob
     if (activetabid === '0') {
-      filterob = ''
+      filterob = []
     } else {
-      filterob = {id: activetabid, type: category}
+      filterob = [{id: activetabid, type: category}]
     }
     const payload = {
       input: {
         page: pageNumber,
         pageSize: 10,
-        filters: [],
+        filters: filterob,
         id: '#HomeHunts',
         entity: 'vibe',
       },
@@ -106,7 +109,7 @@ const ProductList = () => {
     }
 
     fetchdata()
-  }, [pageNumber])
+  }, [pageNumber, activetabid])
   console.log(resobj)
   const {totalProducts, totalPages} = resobj
   console.log(totalPages)
