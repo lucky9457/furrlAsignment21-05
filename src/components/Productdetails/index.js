@@ -1,5 +1,5 @@
 import {useEffect} from 'react'
-import Context from '../../ReactContext/Context'
+
 import '../../Styles/productDetails.css'
 
 const Productdetails = props => {
@@ -14,17 +14,9 @@ const Productdetails = props => {
   })
   const a = 'a'
   return (
-    <Context.Consumer>
-      {value => {
-        const {productsdetails} = value
-        console.log(productsdetails)
-        return (
-          <div>
-            <h1>abc</h1>
-          </div>
-        )
-      }}
-    </Context.Consumer>
+    <div className="productdetailContainer">
+      <h1>Productdetails page</h1>
+    </div>
   )
 }
 
