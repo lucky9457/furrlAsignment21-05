@@ -1,0 +1,49 @@
+.headAndCountContainer {
+  display: flex;
+  align-items: center;
+}
+.productsCount {
+  font-size: 15px;
+  font-family: Roboto;
+  font-style: italic;
+  margin-top: 5px;
+  color: #4a3f4f;
+}
+.productsheading {
+  font-family: Roboto;
+  font-size: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.productlistContainer {
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  overflow: auto;
+  width: 100vw;
+  margin-top: 10px;
+}
+.loadercontainer {
+  height: 10vh;
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+.tabContainer {
+  display: flex;
+  overflow: scroll;
+  margin: 10px;
+}
+.tabContainer::-webkit-scrollbar {
+  display: none;
+}
+.tabContainer {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+@media (min-width: 996px) {
+  .productlistContainer {
+    width: 99vw;
+  }
+}

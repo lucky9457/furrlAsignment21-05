@@ -1,0 +1,15 @@
+.sharebtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.shareicon {
+  font-size: 30px;
+  margin: 5px;
+  background-color: #4c6578;
+  border: none;
+  border-radius: 50%;
+  padding: 5px;
+  color: white;
+}
