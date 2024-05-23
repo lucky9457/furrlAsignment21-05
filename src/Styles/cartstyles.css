@@ -1,0 +1,40 @@
+.cartContainer {
+  display: flex;
+  height: 90vh;
+  padding: 20px;
+
+  align-items: center;
+  flex-direction: column;
+}
+.cartemptyImage {
+  height: 50%;
+  width: 70%;
+}
+.cartheading {
+  font-family: Roboto;
+  font-size: 18px;
+  text-align: center;
+  width: 60%;
+  margin-bottom: 40px;
+}
+.cartbtn1 {
+  width: 100%;
+  padding: 12px;
+  background-color: white;
+  color: #ac43ca;
+  border: solid 1px #ac43ca;
+  margin-bottom: 10px;
+  border-radius: 3px;
+}
+.cartLink {
+  width: 100%;
+}
+.cartbtn2 {
+  width: 100%;
+  padding: 12px;
+  background-color: #ac43ca;
+  color: white;
+  border: none;
+  margin-bottom: 10px;
+  border-radius: 3px;
+}
