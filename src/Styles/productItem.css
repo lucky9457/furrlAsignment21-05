@@ -23,18 +23,19 @@ li {
 }
 .vendor {
   font-family: Roboto;
-  font-size: 15px;
+  font-size: 13px;
   color: #716666;
-  margin-top: 5px;
+  margin-top: 10px;
   margin-left: 5px;
+  transition: ease-in 3s;
 }
 .title {
   font-family: Roboto;
-  font-size: 15px;
+  font-size: 13px;
   color: #412f2f;
   margin-top: 3px;
   margin-left: 5px;
-  height: 20px;
+  height: 15px;
   overflow: hidden;
 }
 .priceContainer {
@@ -45,14 +46,14 @@ li {
 }
 .originalprice {
   font-family: Roboto;
-  font-size: 15px;
+  font-size: 14px;
   color: black;
   margin-right: 3px;
 }
 .mrpPrice {
   font-family: Roboto;
-  font-size: 13px;
-  margin-top: 2px;
+  font-size: 12px;
+  margin-top: 3px;
   color: #716666;
   text-decoration: line-through;
   margin-right: 4px;
