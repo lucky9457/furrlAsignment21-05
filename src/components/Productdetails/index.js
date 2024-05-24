@@ -74,7 +74,7 @@ const Productdetails = props => {
     }
 
     fetchdata()
-  })
+  },[pageNumber])
 
   
   const {totalProducts, totalPages} = resobj
@@ -92,7 +92,7 @@ const Productdetails = props => {
       }
     }
     dataproducts()
-  })
+  },[pageNumber])
   
   const {
     MRP,
