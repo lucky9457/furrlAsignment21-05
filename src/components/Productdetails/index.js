@@ -63,7 +63,7 @@ const Productdetails = props => {
 
         const {data} = responseData
         const {getListingProducts} = data
-        console.log(getListingProducts)
+        
         setResobj(getListingProducts)
         const {products, page} = getListingProducts
         setIsloading(false)
@@ -76,9 +76,9 @@ const Productdetails = props => {
     fetchdata()
   })
 
-  console.log(resobj)
+  
   const {totalProducts, totalPages} = resobj
-  console.log(productdata)
+  
 
   useEffect(() => {
     const dataproducts = () => {
@@ -93,8 +93,7 @@ const Productdetails = props => {
     }
     dataproducts()
   })
-  console.log(productdetails)
-  console.log(imagelist)
+  
   const {
     MRP,
     id,
