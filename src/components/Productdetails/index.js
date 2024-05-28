@@ -167,7 +167,7 @@ class Productdetails extends Component {
           <div className="priceContainer">
             <p className="originalprice">Rs.{pricevalue}</p>
             <p className="mrpPrice">Rs.{mrpval}</p>
-            <p className="discountpercentage">{discountPercent}%</p>
+            <p className="dispercentage">{discountPercent}%</p>
           </div>
           <button type="button" className="buttonCartAdd">
             Add to cart
